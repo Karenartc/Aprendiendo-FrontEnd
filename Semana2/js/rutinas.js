@@ -1,0 +1,1 @@
+window.alert("Saludos desde el archivo .js")
