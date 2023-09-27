@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form action="procesa.js" method="get">
+        <fieldset> <legend> Login </legend>
+            <label>Rut: </label>
+            <input type="text" name="rut" value="" placeholder="12345678-9" size="15" maxlength="15" />
+            <br>
+            <label>Password: </label>
+            <input type="password" name="password" value="" size="15" maxlength="15" />
+            <br>
+        </fieldset>
+        <fieldset> <legend> Datos Personales </legend>
+            <label>Nombre Completo: </label>
+            <input type="text" name="nombre" value="" placeholder="Karen Rodriguez" size="50" maxlength="50" />
+            <br>
+            <p>Dirección: </p>
+            <label>Calle: </label>
+            <input type="text" name="calledic" value="" placeholder="Avenida Bernando" size="50" maxlength="50" />
+            <label>Número: </label>
+            <input type="number" name="numerodic" value="" min="1" max="500" />
+            <label>Comuna/Región</label>
+            <select name="Regón/Comuna" > <!--multiple="2"-->
+                <option disabled selected>Selecciona la Comuna</option>
+                <optgroup label="Metropolitana">
+                    <option value="1301">Santiago</option>
+                    <option value="1302"disabled>Providencia</option>
+                    <option value="1318">Estación Central</option>
+                    <option value="1304">Maipú</option>
+                </optgroup>
+                <optgroup label="Valparaíso">
+                    <option value="0501">Valparaíso</option>
+                    <option value="0508">Concón</option>
+                    <option value="0506">Villa Alemana</option>
+                    <option value="0503">Quilpué</option>
+                </optgroup>
+            </select>
+            <br>
+            <label>Email: </label>
+            <input type="email" name="mail" value="" placeholder="hola123@email.com"  pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"/>
+            <label> Fecha de Nacimiento: </label>
+            <input type="date" name="nacimiento" value="2023-09-18" min="2023-07-18" max="2023-10-18"/>
+        </fieldset>
+        <fieldset>
+        <input type="submit" name="btnEnviar" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

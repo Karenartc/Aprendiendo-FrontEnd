@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form action="procesa.js" method="get"
+    oninput="outTalla.value = inTalla.value" novalidate>
+        <fieldset> <legend> Login </legend>
+            <label>Rut: </label>
+            <input type="text" name="rut" value="" placeholder="12345678-9" size="15" maxlength="15" required/>
+            <br>
+            <label>Password: </label>
+            <input type="password" name="password" value="" size="15" maxlength="15" required/>
+            <br>
+        </fieldset>
+        <fieldset> <legend> Datos Personales </legend>
+            <label>Nombre Completo: </label>
+            <input type="text" name="nombre" value="" placeholder="Karen Rodriguez" size="50" maxlength="50" autofocus autocomplete="off"/>
+            <br>
+            <p>Dirección: </p>
+            <label>Calle: </label>
+            <input type="text" name="calledic" value="" placeholder="Avenida Bernando" size="50" maxlength="50" />
+            <label>Número: </label>
+            <input type="number" name="numerodic" value="" min="1" max="500" />
+            <label>Comuna/Región</label>
+            <select name="Regón/Comuna" > <!--multiple="2"-->
+                <option disabled selected>Selecciona la Comuna</option>
+                <!--Agrupa las opciones-->
+                <optgroup label="Metropolitana">
+                    <!--Opciones-->
+                    <option value="1301">Santiago</option>
+                    <option value="1302"disabled>Providencia</option>
+                    <option value="1318">Estación Central</option>
+                    <option value="1304">Maipú</option>
+                </optgroup>
+                <optgroup label="Valparaíso">
+                    <option value="0501">Valparaíso</option>
+                    <option value="0508">Concón</option>
+                    <option value="0506">Villa Alemana</option>
+                    <option value="0503">Quilpué</option>
+                </optgroup>
+            </select>
+            <br>
+            <label>Email: </label>
+            <input type="email" name="mail" value="" placeholder="hola123@email.com"  pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"/>
+            <br>
+            <label> Fecha de Nacimiento: </label>
+            <input type="date" name="nacimiento" value="2023-09-18" min="2023-07-18" max="2023-10-18"/>
+        </fieldset>
+        <fieldset><legend>Información Adicional</legend>
+            <label>Color Favorito: </label>
+            <input type="color" name="color" value="">
+            <br>
+            <label>¿Cuándo viajas? </label>
+            <input type="datetime-local" name="viaje" value="">
+            <br>
+            <label>Mes Aniversario: </label>
+            <input type="month" name="mes" value="">
+            <label>Semana: </label>
+            <input type="week" name="semana" value="">
+            <br>
+            <label>Hora: </label>
+            <input type="time" name="hora" value="">
+            <br>
+            <label>Buscar: </label>
+            <input type="search" name="buscar" value="">
+            <br>
+            <label>Subir Foto: </label>
+            <input type="file" name="foto" value="">
+            <br>
+            <label>Talla de Calzado: </label>
+            <output name="outTalla" for="talla">10</output>
+            <input type="range" name="inTalla" id="talla" value="10" min="1" max="50" />
+            <br>
+        </fieldset>
+        <fieldset><legend>Países que visitarías</legend>
+            <label><input type="checkbox" name="paises" value="ENG">
+            Inglaterra</label>
+            <input type="checkbox" name="paises" value="FRA" id="paisFra">
+            <label for="paisFra">Francia</label>
+            <input type="checkbox" name="paises" value="COL">
+            <label>Colombia</label>
+            <input type="checkbox" name="paises" value="MEX">
+            <label>México</label>
+        </fieldset>
+        <fieldset><legend>¿Con quién irías? (Sólo uno)</legend>
+            <label><input type="radio" name="quien1" value="PAR">
+            Pareja</label>
+            <label><input type="radio" name="quien1" value="AMI">
+            Amistad</label>
+            <label><input type="radio" name="quien" value="FAL">
+            Familia</label>
+            <label><input type="radio" name="quien" value="NA" checked>
+            Nadie</label>
+        </fieldset>
+        <fieldset><legend>Cuéntame tu Historia</legend>
+            <textarea name="historia" id="" cols="30" rows="5" placeholder="Habla" maxlength="100"></textarea>
+        </fieldset>
+        <fieldset><legend>Navegador favorito</legend>
+            <input list="navegadores" name="nav" placeholder="Tu Navegador" id="">
+            <datalist id="navegadores">
+                <option value="Internet Explorer" />
+                <option value="Opera" />
+                <option value="FireFox" />
+                <option value="Chrome" />
+                <option value="Safari" />
+                <option value="Edge" />
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <input type="submit" name="btnEnviar" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
