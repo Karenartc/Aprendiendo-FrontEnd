@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'amblebold';
+  src: url('../fonts/amble-bold-webfont.woff2') format('woff2'),
+       url('../fonts/amble-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*=== IMPORTANTE ===================================================
+  No modificar estos estilos, ya que son imprescindibles para
+  que la página se vea correctamente.
+  ================================================================== */
+
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: 2px solid #777;
+}
+
+#cabecera { clear: both; }
+#menu { clear: both; }
+#lateral { float: left; width: 20%; }
+#contenido { float: right; width: 78%; }
+#contenido #principal { float: left; width: 78%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+#menu ul#menu_principal li { display: inline; float: left; }
+
+/*-- Sección Principal -----------------------------------------------*/
+#contenido #principal .articulo img { width: 100px; float: left; }
+
+/*-- Pie de página ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+
+/*=== IMPORTANTE ===================================================
+  A partir de aquí, se pueden añadir todos los estilos propios que 
+  sean necesarios.
+  ================================================================== */
+
+/* 1.	El elemento #cabecera debe tener un relleno de 1em en todos los lados. */
+#cabecera {padding: 1em;}
+
+/* 2.	El elemento #menu debe tener un relleno de 0.5em en todos los lados y un margen inferior de 0.5em. */
+#menu {padding: 0.5em;
+      margin-bottom: 0.5em;}
+
+/* 3.	El resto de elementos (#noticias, #publicidad, #principal, #secundario) deben tener 0.5em de relleno en todos sus lados, salvo el elemento #pie, que sólo debe tener relleno en la zona superior e inferior. */
+#noticias, #publicidad, #principal, #secundario {padding: 0.5em;}
+#pie {padding-top: 0.5em;
+      padding-bottom: 0.5em;}
+
+#contenido #principal { float: left; width: 70%; }
+#contenido #secundario { float: right; width: 22%; }
+
+/* 4.	Los elementos .articulo deben mostrar una separación entre ellos de 1em. */
+.articulo {margin-bottom: 1em;}
+
+/* 5.	Las imágenes de los artículos muestran un margen de 0.5em en todos sus lados. */
+img {margin: 0.5em;}
+
+/* 6.	El elemento #publicidad está separado 1em de su elemento superior. */
+#publicidad {margin-top: 1em;}
+
+/* 7.	El elemento #pie debe tener un margen superior de 1em. */
+#pie {margin-top: 1em;}
+
+/* 8.	Eliminar el borde gris que muestran por defecto todos los elementos. */
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {border: none;}
+
+/* 9.	El elemento #menu debe tener un borde inferior de 1 píxel y azul (#004C99). */
+#menu {border-bottom: #004C99 thin solid;}
+
+/* 10.	El elemento #noticias muestra un borde de 1 píxel y gris claro (#C5C5C5). */
+#noticias {border: thin #C5C5C5 solid;}
+
+/* 11.	El elemento #publicidad debe mostrar un borde discontinuo de 1 píxel y de color #CC6600. */
+#publicidad {border: 1px dotted #CC6600;}
+
+/* 12.	El lateral formado por el elemento #secundario muestra un borde de 1 píxel y de color #CC6600. */
+#contenido #secundario {border: 1px #CC6600 solid;}
+
+/* 13.	El elemento #pie debe mostrar un borde superior y otro inferior de 1 píxel y color gris claro #C5C5C5. */
+#pie {border-top: 1px solid #C5C5C5; border-bottom: 1px solid #C5C5C5;}
+
+/* 14.	Los elementos #noticias y #pie tiene un color de fondo gris claro (#F8F8F8). */
+#noticias, #pie {background-color: #F8F8F8;}
+
+/* 15.	El elemento #publicidad muestra un color de fondo amarillo claro (#FFF6CD). */
+#publicidad {background-color: #FFF6CD;}
+
+/* 16.	Los elementos <h2> de #secundario muestran un color de fondo #DB905C y un pequeño padding de 0.2em. */
+#secundario h2 {background-color: #DB905C; padding: 0.2em;}
+
+/* 17.	El fondo del elemento #menu se construye mediante una pequeña imagen llamada fondo_menu.gif. */
+#menu {background-image: url(../images/fondo_menu.gif);
+      background-repeat: repeat;}
+
+/* Las opciones del #menu tienen que separarse entre ellas, cambian a color blanco y eliminarle el subrayado */
+#menu #menu_principal li a {color: white; padding: 0.5em; text-decoration: none}
+#menu #menu_principal li a:hover {color: #CC6600;}
+
+/* 18.	El logotipo del sitio se muestra mediante una imagen de fondo del elemento <h1> contenido en el elemento #cabecera (la imagen se llama logo.gif). */
+#cabecera h1 {background-image: url(../images/logo.gif); padding: 0.2em; 
+              background-repeat: no-repeat; background-position: top left;}
+#cabecera h1 span {visibility: hidden;}
+
+/* Incorporación de nueva fuente */
+/* body {font-family: 'Roboto Slab', serif;} */
+
+#principal .articulo h2 {font-family: 'amblebold';}

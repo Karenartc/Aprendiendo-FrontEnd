@@ -1,0 +1,9 @@
+#relativas {font-size: 2em;}
+
+#absolutas {font-size: 0.5cm;}
+
+img {opacity: 0.2;}
+
+body {background-color: bisque;}
+
+img:hover{opacity: 1;}
