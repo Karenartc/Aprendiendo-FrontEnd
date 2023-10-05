@@ -1,0 +1,38 @@
+/* Selector Universal */
+/* Aplica sobre todos los elementos del coumentos HTML */
+/* * {border: thin dashed chocolate;}
+* {padding: 0;margin: 0;} */
+
+/* Selector de Etiqueta */
+body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: antiquewhite;}
+strong {background-color: chocolate;}
+
+/* Selector Múltiple */
+h1, h2, h3, h4, h4, h6 {border: thin dashed chocolate;
+                        background-color: bisque;
+                        text-shadow: 4px 4px 4px grey;}
+
+/* Selector Descendente */
+footer div p strong {font-size: 1.2em; background-color: orange;}
+
+/* Selector de Hijos */
+/* strong es hijo del parráfo */
+/* p > strong {color: azure;} */
+
+/* Selector Adyacente */
+/* el segundo parráfo adyacente al h2 */
+h2 + p + p {font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;}
+
+/* Selector de Clase */
+header.articulo1 {border: thin dashed brown;
+            background-color: salmon;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.articulo2 {border: thin dashed red;
+            background-color: gray;}
+
+/* Selector de ID */
+/* El ID es único en el documento html */
+#pie {font-size: 0.7em; background-color: coral;}
