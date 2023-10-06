@@ -1,0 +1,51 @@
+#container {width:300px; height:400px; 
+			border:#000 thin solid;
+			margin:50px; 
+			position:relative;} 
+
+div p {background:#693; color:#fff; 
+	    line-height:100px;
+	    margin:0px; text-align:center;}
+
+div {height:100px; width:100px; 
+	border:thin solid #600; 
+	margin-bottom:10px;}
+
+/* Posicionamiento Flotante */
+
+/* #caja1 {float: right;}
+#caja2 {float: left;}
+#caja3 {float: right;} */
+
+/* Posicionamiento Relativo */
+/* Mueve la caja del elemento desde su posición original */
+
+/* #caja1 {position: relative; top: 120px; left: 120px;}
+#caja2 {position: relative; top: 50px; left: 50px;}
+#caja3 {} */
+
+/* Posicionamiento Absoluto */
+
+#caja1 {position: absolute; top: 120px; left: 120px;
+		z-index: 3;}
+#caja2 {position: absolute; top: 50px; left: 50px;
+		z-index: 2;}
+#caja3 {position: absolute; top: 0px; left: 0px;
+	z-index: 1;}
+
+/* Posicionamiento Fijo */
+
+/* #caja3 {position: fixed; top: 10px; left: 0px;} */
+
+/* Posicionamiento Fijo en Imágenes de Fondo*/
+
+/*  div {background: url(../images/oso.jpg) no-repeat fixed;} */
+
+/* Display Visibility Overflow */
+
+/* #caja1 {display: none;}
+#caja2 {visibility: hidden;} */
+#caja3 {overflow: scroll;} 
+
+/* #par1 {display: none;} */
+#par1 {visibility: hidden;}
