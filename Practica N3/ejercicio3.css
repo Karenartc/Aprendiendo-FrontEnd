@@ -1,0 +1,86 @@
+body{
+    padding: 0em 1em 0em 1em;
+}
+
+header {
+    background-color:tomato;
+    border-radius: 10px;
+    padding-bottom: 4em;
+    margin-bottom: 1em;
+}
+
+header p {
+    padding: 0.6em;
+}
+
+nav {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 0.7em 9em .7em 0.3em;
+    margin-right: 1em;
+    float: right;
+}
+
+main {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    width: 69%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+main p {
+    padding: 0.6em;
+}
+
+article {
+    background-color: green;
+    border-radius: 10px;
+    width: 94%;
+    position: relative; left:  3%;
+    padding-bottom: 2em;
+}
+
+section {
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: 94%;
+    position: relative; left: 3%;
+    padding-bottom: 3em;
+}
+
+aside {
+    background-color: teal;
+    border-radius: 10px;
+    width: 30%;
+    float: right;
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+}
+aside p{
+    padding: 0.6em;
+}
+
+#aside-section-2 {
+    padding-bottom: 20em;
+}
+
+footer {
+    background-color: violet;
+    border-radius: 10px;
+    clear: both;
+}
+
+footer p {
+    padding: 0.6em;
+}
+
+main footer {
+    width: 96%;
+    position: relative; left: 2%;
+    margin-bottom: 3em;
+}
+
+#footer-page {
+    padding-bottom: 1em;
+}
