@@ -1,0 +1,71 @@
+/* ALL */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body{
+    background-color: rgb(33, 37, 41);
+}
+
+/* NAVBAR */
+#navbar{
+    background-color: rgb(177, 142, 55);
+}
+
+#logo {
+    position: absolute;
+    left: 45%;
+    top: 4px;
+    width: 7%;
+    border-radius: 110%;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0);
+}
+
+.nav-link{
+    margin-right: 2em;
+    margin-left: 1em;
+    transition: .2s in-ease;
+}
+
+.nav-link:hover{
+    background-color: rgba(165, 112, 60, 0.5);
+    border-radius: 20px;
+    color: black;
+}
+
+.btnSesion{
+    padding: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 2.5em;
+    background-color: rgb(33, 37, 41);
+    text-decoration: none;
+    color: rgb(177, 142, 55);
+    border-radius: 20px;
+    transition: .2s ease;
+}
+
+.btnSesion:hover{
+    transform: scale(1.1);
+}
+
+#pageActual{
+    padding: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 3px;
+    margin-left: 2.5em;
+    background-color: rgb(33, 37, 41);
+    text-decoration: none;
+    color: rgb(177, 142, 55);
+    border-radius: 20px;
+    transition: .2s ease;
+}
+
+#pageActual:hover{
+    transform: scale(1.1);
+}
