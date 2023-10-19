@@ -6,8 +6,8 @@
 
 /* BODY */
 body{
-    /* background-color: rgb(33, 37, 41); */
-    background-color: rgb(177, 142, 55);
+    background: linear-gradient(to bottom, rgba(177, 142, 55) 0%, rgba(33, 37, 41, 0.3) 100%);
+    background-color: black;
     font-family: 'Lora', serif;
 }
 
@@ -76,6 +76,155 @@ body{
     transform: scale(1.1);
 }
 
+/* IMG ENSEMBLE */
+#ensemble {
+    border-bottom: 3px solid whitesmoke;
+    margin-bottom: 0;
+    box-shadow: 0px 80px 70px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* QUOTE */
+
+#quote-container {
+    margin-top: 0;
+    position: absolute;
+    top: 67%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px; 
+}
+
+#quotebody #blockquote {
+    text-align: center;
+    border: none; 
+    color: black;
+}
+
+
+
+/* TABLE */
+
+.personajes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: rgb(33, 37, 41);
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: 7%;
+    margin-bottom: .5em;
+}
+
+.personajes-container table {
+    width: 100%;
+    text-align: center;
+}
+
+.personajes-container table td {
+    padding: 2%;
+    width: 33.33%;
+}
+
+.personajes-container table td:hover {
+    border-radius: 20px;
+    background-color:  rgb(177, 142, 55, .2);
+}
+
+.personajes-container table td a {
+    text-decoration: none;
+    color: rgb(33, 37, 41);
+    font-weight: bold;
+}
+
+/* CARDS */
+
+.h12{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: 3.5%;
+    margin-bottom: 1em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.card {
+    width: 47%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 1em;
+    margin-bottom: .8em;
+    text-align: center;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card:hover {
+    transform: translateY(-15px);
+    transition: transform 0.5s ease; 
+}
+
+.card .card-image {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-content {
+    margin-top: 1em;
+}
+
+.card h2 {
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    margin-bottom: 1em;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: rgb(177, 142, 55);
+}
+
+b {
+    color: rgb(177, 142, 55);
+}
+
 /* FOOTER */
 
 #mainfooter {
@@ -84,6 +233,7 @@ body{
     color: rgb(177, 142, 55);
     padding: 2em;
     text-align: center;
+    margin-top: 4%;
 }
 
 .footer-content {

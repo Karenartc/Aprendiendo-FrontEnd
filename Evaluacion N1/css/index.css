@@ -177,6 +177,13 @@ b {
     color: rgb(177, 142, 55);
 }
 
+hr {
+    margin: 0;
+    margin-bottom: 1em;
+    color: rgb(177, 142, 55);
+    border-width: 2px;
+}
+
 /* CURIOSIDADES */
 
 #curiosidades {
