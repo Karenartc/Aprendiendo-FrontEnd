@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos Propiedad</title>
+  <style> 
+    body{text-align:center;}
+  </style>
+</head>
+<body onload="inicializar()">
+  <h1>Eventos Propiedad</h1>
+  <img src="img/lamp_off.jpg" id="imgLamp" width="200" />
+
+  <script>
+    function inicializar(){    
+      
+      let img = document.getElementById("imgLamp");
+
+      //Se define un manejador de eventos como propiedad
+      img.ondblclick = () => {
+        img.src = "img/lamp_on.jpg"
+      }
+
+      img.onclick = () => {
+        img.src = "img/lamp_off.jpg"
+      }
+    }
+  </script>
+</body>
+</html>

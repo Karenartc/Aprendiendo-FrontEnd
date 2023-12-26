@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos Listeners</title>
+  <style> 
+    body{text-align:center;}
+  </style>
+</head>
+<body onload="inicializar()">
+  <h1>Eventos Listeners</h1>
+  <img src="img/lamp_off.jpg" id="imgLamp" width="200"/>
+  <input type="button" value="remover listeners" onclick="noEscuchar();">
+
+  <script>
+
+    const encender = () => {
+      document.getElementById("imgLamp").src="img/lamp_on.jpg"
+    }
+    
+    const apagar = () => {
+      document.getElementById("imgLamp").src="img/lamp_off.jpg"
+    }
+
+    function inicializar(){
+
+      let img = document.getElementById("imgLamp");
+
+      //Se define listeners sobre el objeto img
+      img.addEventListener("mouseover", encender);
+      img.addEventListener("mouseout", apagar);
+
+    }
+
+    function noEscuchar(){
+
+      let img = document.getElementById("imgLamp");
+
+      //Remueve los listeners sobre el objeto img
+      img.removeEventListener("mouseover", encender);
+      img.removeEventListener("mouseout", apagar);
+
+}
+  </script>
+</body>
+</html>
