@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 
-export const ejercicio1Component = (anio) => {
+export const Ejercicio1Component = ({anio}) => {
 
     // Usar userState
     const [anioActual, setAnioActual] = useState(anio);
+
     const siguiente = () => {
         setAnioActual(anioActual + 1)
     }
@@ -38,3 +39,5 @@ export const ejercicio1Component = (anio) => {
         </div>
     )
 }
+
+export default Ejercicio1Component;
